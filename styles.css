@@ -1,0 +1,105 @@
+:root{
+  --ink:#141414;
+  --paper:#F5F1E7;
+  --paper-2:#EEE7D6;
+  --pink:#E62062;
+  --pink-dark:#B5164C;
+  --muted:#5B5348;
+}
+body{
+  font-family:'IBM Plex Sans Arabic', sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+}
+.font-display{ font-family:'Cairo', sans-serif; }
+.font-mono{ font-family:'Space Mono', monospace; }
+
+.bg-ink{ background:var(--ink); }
+.bg-pink{ background:var(--pink); }
+.bg-pink-dark{ background:var(--pink-dark); }
+.bg-paper2{ background:var(--paper-2); }
+.text-ink{ color:var(--ink); }
+.text-pink{ color:var(--pink); }
+.text-muted{ color:var(--muted); }
+.border-ink{ border-color:var(--ink); }
+.border-pink{ border-color:var(--pink); }
+.hover-pink-dark:hover{ background:var(--pink-dark); }
+
+/* Broadcast chyron eyebrow — signature element, unchanged from the build you liked */
+.chyron{
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+  background:var(--ink);
+  color:var(--paper);
+  font-family:'Cairo', sans-serif;
+  font-weight:800;
+  font-size:.72rem;
+  letter-spacing:.08em;
+  padding:.35rem .9rem .35rem .55rem;
+  clip-path:polygon(0 0, 100% 0, 92% 100%, 0% 100%);
+}
+.chyron.pink{ background:var(--pink); }
+
+.timecode{
+  font-family:'Space Mono', monospace;
+  font-size:.75rem;
+  letter-spacing:.03em;
+  color:var(--pink);
+}
+
+/* On-air pulsing dot */
+.on-air-dot{
+  width:.5rem; height:.5rem; border-radius:9999px; background:#fff;
+  animation:pulse-dot 1.8s ease-in-out infinite;
+}
+@keyframes pulse-dot{
+  0%,100%{ opacity:1; box-shadow:0 0 0 0 rgba(255,255,255,.5); }
+  50%{ opacity:.55; box-shadow:0 0 0 6px rgba(255,255,255,0); }
+}
+
+/* Ticker */
+.ticker-track{
+  display:flex;
+  width:max-content;
+  animation: ticker 32s linear infinite;
+}
+@keyframes ticker{
+  from{ transform:translateX(0); }
+  to{ transform:translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce){
+  .ticker-track{ animation:none; }
+  .on-air-dot{ animation:none; }
+}
+
+.card{
+  background:#fff;
+  border:1px solid #E7DFCB;
+}
+
+.goal-check{
+  flex:0 0 auto;
+  width:1.6rem; height:1.6rem;
+  display:flex; align-items:center; justify-content:center;
+  border-radius:9999px;
+  background:var(--paper-2);
+  color:var(--pink);
+  font-weight:800;
+  font-size:.8rem;
+}
+
+.reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease; }
+.reveal.in{ opacity:1; transform:translateY(0); }
+@media (prefers-reduced-motion: reduce){ .reveal{ opacity:1; transform:none; transition:none; } }
+
+/* Mobile nav drawer */
+#mobileNav{
+  position:fixed; inset:0; z-index:60; background:var(--ink); color:var(--paper);
+  display:none; flex-direction:column; padding:1.5rem;
+}
+#mobileNav.open{ display:flex; }
+#mobileNav a{ font-family:'Cairo', sans-serif; font-weight:700; font-size:1.35rem; padding:.9rem 0; border-bottom:1px solid rgba(245,241,231,.1); }
+
+::selection{ background:var(--pink); color:#fff; }
+:focus-visible{ outline:3px solid var(--pink); outline-offset:2px; }

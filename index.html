@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>طفل آمن — قناة عيون سنار</title>
+<meta name="description" content="طفل آمن: منصة إعلامية توعوية لحماية الأطفال في ولاية سنار، إقليم النيل الأزرق، السودان.">
+<link rel="icon" href="SCSLogo/Logo-0.png">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased flex flex-col min-h-screen">
+
+  <!-- Channel bug bar -->
+  <div class="bg-ink text-paper/70 text-xs">
+    <div class="container mx-auto px-4 py-1.5 flex items-center justify-between font-mono tracking-wide text-white/60">
+      <span>قناة عيون سنار · إنتاج توعوي</span>
+      <span class="hidden sm:inline"><a href="mailto:info@savechildsd.com" class="hover:text-pink">info@savechildsd.com</a> · <a href="https://savechildsd.com" class="hover:text-pink">savechildsd.com</a></span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-ink text-white sticky top-0 z-50 border-b border-white/10">
+    <div class="container mx-auto px-4 py-3.5 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="SCSLogo/Logo-0.png" alt="شعار برنامج طفل آمن" class="h-11 w-11 rounded-full object-cover ring-2 ring-pink/70">
+        <div class="leading-tight">
+          <h1 class="font-display font-black text-base sm:text-lg">طفل آمن</h1>
+          <p class="text-[11px] text-white/50 font-mono">SAFE&nbsp;CHILD&nbsp;·&nbsp;SINNAR</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-7 font-display font-semibold text-sm text-white/80">
+        <a href="#about" class="hover:text-pink transition">الرؤية</a>
+        <a href="#legal" class="hover:text-pink transition">المرجع القانوني</a>
+        <a href="#segments" class="hover:text-pink transition">فقرات البرنامج</a>
+        <a href="#watch" class="hover:text-pink transition">الحلقة الأولى</a>
+        <a href="#team" class="hover:text-pink transition">الفريق</a>
+        <a href="#partners" class="hover:text-pink transition">الشركاء</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="#connect" class="bg-pink hover-pink-dark text-white text-xs font-display font-bold px-4 py-2.5 rounded-sm transition inline-flex items-center gap-2">
+          <span class="on-air-dot"></span> تابعونا
+        </a>
+        <button id="menuOpen" aria-label="فتح القائمة" class="md:hidden text-white p-2">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div id="mobileNav">
+    <div class="flex items-center justify-between mb-8">
+      <div class="flex items-center gap-2">
+        <img src="SCSLogo/Logo-0.png" alt="" class="h-9 w-9 rounded-full object-cover ring-2 ring-pink/70">
+        <span class="font-display font-black">طفل آمن</span>
+      </div>
+      <button id="menuClose" aria-label="إغلاق القائمة" class="p-2">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <a href="#about">الرؤية</a>
+    <a href="#legal">المرجع القانوني</a>
+    <a href="#segments">فقرات البرنامج</a>
+    <a href="#watch">الحلقة الأولى</a>
+    <a href="#team">الفريق</a>
+    <a href="#partners">الشركاء</a>
+    <a href="#connect">تابعونا</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="relative bg-ink text-white overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="SCS-Photos/الصورة-الرئيسية-لاطفال-السودان.jpg" alt="أطفال سودانيون في ولاية سنار" class="w-full h-full object-cover opacity-35">
+      <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/30"></div>
+    </div>
+    <div class="relative container mx-auto px-4 pt-16 pb-10 md:pt-24 md:pb-14 max-w-4xl text-center z-10 space-y-7">
+      <span class="chyron pink mx-auto">
+        <span class="on-air-dot"></span> قريباً — قناة عيون سنار المحلية
+      </span>
+      <h2 class="font-display text-4xl md:text-6xl font-black leading-[1.1] tracking-tight">
+        طفل آمن
+      </h2>
+      <p class="text-lg md:text-xl text-white/75 max-w-2xl mx-auto leading-relaxed font-light">
+        حلقات توعوية أسبوعية تُبنى على القانون، وتُروى بلغة الناس — لحماية أطفال النيل الأزرق ورعايتهم.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+        <a href="#watch" class="bg-pink hover-pink-dark text-white font-display font-bold text-sm px-6 py-3 rounded-sm transition">شاهد الحلقة الأولى</a>
+        <a href="#segments" class="border border-white/30 hover:border-pink hover:text-pink text-white/90 font-display font-bold text-sm px-6 py-3 rounded-sm transition">تعرّف على فقرات البرنامج</a>
+      </div>
+    </div>
+
+    <!-- Facts ticker -->
+    <div class="relative border-t border-white/10 bg-black/30 overflow-hidden py-2.5">
+      <div class="ticker-track font-mono text-[11px] tracking-wide text-pink/90">
+        <div class="flex items-center gap-10 px-5">
+          <span>يُعرض على قناة عيون سنار المحلية بولاية سنار</span>
+          <span class="text-white/30">/</span>
+          <span>مبني على قانون الطفل السوداني لسنة 2010</span>
+          <span class="text-white/30">/</span>
+          <span>الحلقة الأولى متاحة الآن على يوتيوب</span>
+          <span class="text-white/30">/</span>
+          <span>موجّه لأسر ومجتمعات النيل الأزرق</span>
+        </div>
+        <div class="flex items-center gap-10 px-5" aria-hidden="true">
+          <span>يُعرض على قناة عيون سنار المحلية بولاية سنار</span>
+          <span class="text-white/30">/</span>
+          <span>مبني على قانون الطفل السوداني لسنة 2010</span>
+          <span class="text-white/30">/</span>
+          <span>الحلقة الأولى متاحة الآن على يوتيوب</span>
+          <span class="text-white/30">/</span>
+          <span>موجّه لأسر ومجتمعات النيل الأزرق</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="flex-grow">
+
+    <!-- About / Vision -->
+    <section id="about" class="py-16 md:py-24 border-b border-[#E7DFCB]">
+      <div class="container mx-auto px-4 max-w-6xl">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal">
+          <div class="space-y-6">
+            <span class="chyron">الرؤية والأهداف</span>
+            <h3 class="font-display text-3xl md:text-4xl font-black leading-tight">منصة توعوية، بمرجعية قانونية،<br class="hidden md:block"> ولغة أهل سنار</h3>
+            <p class="text-base md:text-lg text-muted leading-relaxed">
+              يهدف البرنامج إلى تعزيز ثقافة حماية الطفل في السودان، ونشر الوعي بحقوق الأطفال، ودعم الأسر والمجتمع بمعلومات موثوقة مستندة إلى قانون الطفل والمعايير المهنية وخبرة المختصين — بما يراعي الظروف الإنسانية والاجتماعية في إقليم النيل الأزرق.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="flex items-start gap-3"><span class="goal-check">✓</span><p class="text-sm font-medium">نشر الوعي بحقوق الطفل وواجبات المجتمع تجاهه</p></div>
+              <div class="flex items-start gap-3"><span class="goal-check">✓</span><p class="text-sm font-medium">التوعية بمخاطر التحرش والعنف والإهمال والاستغلال</p></div>
+              <div class="flex items-start gap-3"><span class="goal-check">✓</span><p class="text-sm font-medium">معالجة قضايا عمالة الأطفال والتسرب الدراسي</p></div>
+              <div class="flex items-start gap-3"><span class="goal-check">✓</span><p class="text-sm font-medium">مناقشة أثر النزاعات والنزوح على الأطفال</p></div>
+              <div class="flex items-start gap-3"><span class="goal-check">✓</span><p class="text-sm font-medium">محاربة العادات الضارة كختان الإناث وزواج القاصرات</p></div>
+              <div class="flex items-start gap-3"><span class="goal-check">✓</span><p class="text-sm font-medium">تقديم حلول دعم نفسي وعملي متكاملة للأسر</p></div>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="rounded-sm overflow-hidden shadow-xl border-8 border-white">
+              <img src="SCS-Photos/طفلة-سودانية.jpg" alt="طفلة سودانية" class="w-full h-80 md:h-96 object-cover">
+            </div>
+            <div class="absolute -bottom-5 -right-5 bg-ink text-white px-5 py-3 font-mono text-xs flex items-center gap-2 shadow-lg">
+              <img src="SCS-Photos/السودان-تطهر-ولاية-سنار-بالاحمر.webp" alt="خريطة السودان وموقع ولاية سنار" class="h-9 w-9 object-cover rounded-sm">
+              <span>ولاية سنار<br><span class="text-pink">إقليم النيل الأزرق</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legal -->
+    <section id="legal" class="py-16 md:py-24 bg-paper2 border-b border-[#E7DFCB]">
+      <div class="container mx-auto px-4 max-w-6xl">
+        <div class="max-w-2xl mb-10 reveal">
+          <span class="chyron pink">المرجع القانوني</span>
+          <h3 class="font-display text-3xl md:text-4xl font-black leading-tight mt-4">كل حلقة تستند إلى نص، لا إلى رأي</h3>
+          <p class="text-muted mt-3 leading-relaxed">يستند البرنامج في مواده وإرشاداته إلى مواثيق دولية وقوانين وطنية راسخة تضمن حقوق حماية الطفولة ورعايتها.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 reveal">
+          <a href="https://arabruleoflaw.org/files/legaldatabase/Laws/Sudan/Doc01.pdf" target="_blank" rel="noopener" class="card group p-6 space-y-4 hover:border-pink transition">
+            <span class="timecode">01</span>
+            <h4 class="font-display font-bold text-lg">قانون الطفل السوداني لسنة 2010</h4>
+            <span class="text-xs text-pink font-bold inline-flex items-center gap-1">اقرأ نص القانون <span class="group-hover:-translate-x-1 transition">←</span></span>
+          </a>
+          <a href="https://www.unicef.org/ar/%D9%86%D8%B5-%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9-%D8%AD%D9%82%D9%88%D9%82-%D8%A7%D9%84%D8%B7%D9%81%D9%84/%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9-%D8%AD%D9%82%D9%88%D9%82-%D8%A7%D9%84%D8%B7%D9%81%D9%84" target="_blank" rel="noopener" class="card group p-6 space-y-4 hover:border-pink transition">
+            <span class="timecode">02</span>
+            <h4 class="font-display font-bold text-lg">اتفاقية حقوق الطفل الدولية — اليونيسف</h4>
+            <span class="text-xs text-pink font-bold inline-flex items-center gap-1">طالع الاتفاقية <span class="group-hover:-translate-x-1 transition">←</span></span>
+          </a>
+          <a href="https://hrlibrary.umn.edu/arab/afr-child-charter.html" target="_blank" rel="noopener" class="card group p-6 space-y-4 hover:border-pink transition">
+            <span class="timecode">03</span>
+            <h4 class="font-display font-bold text-lg">الميثاق الأفريقي لحقوق ورفاهية الطفل، 1990</h4>
+            <span class="text-xs text-pink font-bold inline-flex items-center gap-1">دخل حيّز التنفيذ 1999 <span class="group-hover:-translate-x-1 transition">←</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Segments -->
+    <section id="segments" class="py-16 md:py-24 border-b border-[#E7DFCB]">
+      <div class="container mx-auto px-4 max-w-6xl">
+        <div class="max-w-2xl mb-10 reveal">
+          <span class="chyron">دليل الحلقة</span>
+          <h3 class="font-display text-3xl md:text-4xl font-black leading-tight mt-4">خمس فقرات، ترتيب واحد كل حلقة</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="card p-7 space-y-3 reveal">
+            <span class="timecode">00:00 — 00:15</span>
+            <h4 class="font-display text-xl font-bold">الحوار الرئيسي مع الخبراء</h4>
+            <p class="text-muted leading-relaxed text-sm">نقاش حي ومباشر مع مختصين في علم النفس، الخدمة الاجتماعية، القانون، والإعلام — رعاية شاملة متوافقة مع الأطر المهنية.</p>
+          </div>
+          <div class="card p-7 space-y-3 reveal">
+            <span class="timecode">00:15 — 00:25</span>
+            <h4 class="font-display text-xl font-bold">لغة بسيطة للأطفال</h4>
+            <p class="text-muted leading-relaxed text-sm">مواد موجّهة ومبسطة تساعد الأطفال على فهم حقوقهم، وحماية أنفسهم، ومعرفة طرق طلب الأمان والمساعدة بثقة.</p>
+          </div>
+          <div class="card p-7 space-y-3 reveal">
+            <span class="timecode">00:25 — 00:40</span>
+            <h4 class="font-display text-xl font-bold">الكاميرا المتجولة في سنار</h4>
+            <p class="text-muted leading-relaxed text-sm">جولات ميدانية في أسواق وأحياء ومؤسسات الولاية، لقياس الوعي المجتمعي الفعلي ورصد التحديات على أرض الواقع.</p>
+          </div>
+          <div class="card p-7 space-y-3 reveal">
+            <span class="timecode">00:40 — 00:50</span>
+            <h4 class="font-display text-xl font-bold">حالة الحلقة: توعية وعِبرة</h4>
+            <p class="text-muted leading-relaxed text-sm">عرض حالات إنسانية أو واقعية بالتزام صارم بالخصوصية والسرية والأمان الرقمي، لاستخلاص دروس توعوية للأسر.</p>
+          </div>
+          <div class="card p-7 space-y-3 reveal md:col-span-2">
+            <span class="timecode">00:50 — 01:00</span>
+            <h4 class="font-display text-xl font-bold">تغطية المبادرات والفعاليات</h4>
+            <p class="text-muted leading-relaxed text-sm">توثيق المبادرات والفعاليات الخاصة بحماية الطفل في الولاية والإقليم، وتسليط الضوء على جهود الأفراد والمؤسسات.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Watch first episode -->
+    <section id="watch" class="py-16 md:py-24 bg-ink text-white border-b border-white/10">
+      <div class="container mx-auto px-4 max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="rounded-sm overflow-hidden border-8 border-white/10 reveal shadow-2xl" style="aspect-ratio:16/9;">
+          <iframe src="https://www.youtube.com/embed/qR9N1OYXco0" title="الحلقة الأولى — طفل آمن" class="w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="space-y-6 reveal">
+          <span class="chyron pink"><span class="on-air-dot"></span> بُثت أمس مساءً</span>
+          <h3 class="font-display text-3xl md:text-4xl font-black leading-tight">الحلقة الأولى متاحة الآن</h3>
+          <p class="text-white/70 leading-relaxed">
+            أول حلقات البرنامج نُشرت على القناة الرسمية على يوتيوب — انطلاقة أولى نحو موسم كامل من الحلقات التوعوية لأسر ومجتمعات ولاية سنار.
+          </p>
+          <a href="https://www.youtube.com/@savechildsd" target="_blank" rel="noopener" class="bg-pink hover-pink-dark text-white font-display font-bold text-sm px-6 py-3 rounded-sm transition inline-flex items-center gap-2">زيارة القناة على يوتيوب</a>
+          <div class="flex gap-8 pt-4 border-t border-white/10 font-mono text-[11px] text-white/50">
+            <div><strong class="block font-display text-pink text-sm mb-1">عيون سنار</strong>القناة الناقلة</div>
+            <div><strong class="block font-display text-pink text-sm mb-1">@savechildsd</strong>قناة يوتيوب</div>
+            <div><strong class="block font-display text-pink text-sm mb-1">سنار</strong>مكان التصوير</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team + Audience -->
+    <section id="team" class="py-16 md:py-24 border-b border-[#E7DFCB]">
+      <div class="container mx-auto px-4 max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="rounded-sm overflow-hidden border-8 border-white shadow-xl reveal">
+          <img src="SCS-Photos/الخبراء-المختصين.jpg" alt="فريق الخبراء والمختصين بحماية الطفل" class="w-full h-72 md:h-96 object-cover">
+        </div>
+        <div class="space-y-6 reveal">
+          <span class="chyron pink">فريق الحلقة</span>
+          <h3 class="font-display text-3xl md:text-4xl font-black leading-tight">خبرة ميدانية، لا آراء عابرة</h3>
+          <p class="text-muted leading-relaxed">
+            يستضيف البرنامج نخبة من الباحثين القانونيين، الأطباء النفسيين، وخبراء الخدمة الاجتماعية، لتقديم حلول علمية قابلة للتطبيق مباشرة داخل المجتمع.
+          </p>
+          <div class="pt-2">
+            <p class="text-xs text-pink font-display font-bold mb-3">موجّه إلى</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-paper2 text-sm px-3 py-1.5 rounded-sm font-medium">الأطفال واليافعون</span>
+              <span class="bg-paper2 text-sm px-3 py-1.5 rounded-sm font-medium">أولياء الأمور والأسر</span>
+              <span class="bg-paper2 text-sm px-3 py-1.5 rounded-sm font-medium">المعلمون والتربويون</span>
+              <span class="bg-paper2 text-sm px-3 py-1.5 rounded-sm font-medium">القيادات المجتمعية بسنار</span>
+              <span class="bg-paper2 text-sm px-3 py-1.5 rounded-sm font-medium">الإعلاميون وصناع المحتوى</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners -->
+    <section id="partners" class="py-16 md:py-20 border-b border-[#E7DFCB]">
+      <div class="container mx-auto px-4 max-w-6xl reveal">
+        <p class="text-center text-xs font-display font-bold text-muted tracking-widest mb-3">نتطلع للتعاون والشراكة مع</p>
+        <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-center">
+          <span class="font-display font-bold text-lg text-ink/80">منظمة اليونيسف</span>
+          <span class="text-pink">•</span>
+          <span class="font-display font-bold text-lg text-ink/80">منظمة إنقاذ الطفولة الدولية</span>
+          <span class="text-pink">•</span>
+          <span class="font-display font-bold text-lg text-ink/80">المجلس القومي لرعاية الطفولة — السودان</span>
+          <span class="text-pink">•</span>
+          <span class="font-display font-bold text-lg text-ink/80">بلان إنترناشونال</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connect -->
+    <section id="connect" class="py-16 md:py-24">
+      <div class="container mx-auto px-4 max-w-3xl">
+        <div class="bg-pink text-white rounded-sm p-8 md:p-12 text-center space-y-5 shadow-xl reveal">
+          <span class="chyron bg-ink text-white mx-auto">
+            <span class="on-air-dot"></span> تابعوا البرنامج
+          </span>
+          <h3 class="font-display text-2xl md:text-3xl font-black">لا تفوّت أي حلقة</h3>
+          <p class="text-white/85 max-w-md mx-auto leading-relaxed text-sm md:text-base">
+            تابعونا على فيسبوك ويوتيوب لمشاهدة الحلقات أول بأول، أو راسلونا مباشرة على بريدنا الرسمي.
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+            <a href="https://www.facebook.com/share/199m3nvJ1R/" target="_blank" rel="noopener" class="bg-white/15 border border-white/40 hover:bg-white hover:text-pink text-white font-display font-bold text-sm px-5 py-3 rounded-full transition inline-flex items-center gap-2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"/></svg>
+              فيسبوك
+            </a>
+            <a href="https://www.youtube.com/@savechildsd" target="_blank" rel="noopener" class="bg-white/15 border border-white/40 hover:bg-white hover:text-pink text-white font-display font-bold text-sm px-5 py-3 rounded-full transition inline-flex items-center gap-2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.4-.43-5a2.9 2.9 0 0 0-2.05-2.05C18.9 4.5 12 4.5 12 4.5s-6.9 0-8.52.45A2.9 2.9 0 0 0 1.43 7C1 8.6 1 12 1 12s0 3.4.43 5A2.9 2.9 0 0 0 3.48 19c1.62.45 8.52.45 8.52.45s6.9 0 8.52-.45A2.9 2.9 0 0 0 22.57 17c.43-1.6.43-5 .43-5ZM9.8 15.5v-7l6.2 3.5-6.2 3.5Z"/></svg>
+              يوتيوب
+            </a>
+            <a href="mailto:info@savechildsd.com" class="bg-white/15 border border-white/40 hover:bg-white hover:text-pink text-white font-display font-bold text-sm px-5 py-3 rounded-full transition inline-flex items-center gap-2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+              info@savechildsd.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-ink text-white/60 py-12 border-t-4 border-pink">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
+        <div class="flex items-center gap-3">
+          <img src="SCSLogo/Logo-0.png" alt="" class="h-9 w-9 rounded-full object-cover ring-2 ring-pink/50">
+          <span class="font-display font-black text-white text-base">طفل آمن</span>
+        </div>
+        <p class="text-sm">يُعرض على قناة عيون سنار المحلية بولاية سنار — إقليم النيل الأزرق</p>
+      </div>
+      <div class="flex justify-center md:justify-start gap-4 mb-8">
+        <a href="https://www.facebook.com/share/199m3nvJ1R/" target="_blank" rel="noopener" aria-label="فيسبوك" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-pink hover:text-pink transition">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@savechildsd" target="_blank" rel="noopener" aria-label="يوتيوب" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-pink hover:text-pink transition">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.4-.43-5a2.9 2.9 0 0 0-2.05-2.05C18.9 4.5 12 4.5 12 4.5s-6.9 0-8.52.45A2.9 2.9 0 0 0 1.43 7C1 8.6 1 12 1 12s0 3.4.43 5A2.9 2.9 0 0 0 3.48 19c1.62.45 8.52.45 8.52.45s6.9 0 8.52-.45A2.9 2.9 0 0 0 22.57 17c.43-1.6.43-5 .43-5ZM9.8 15.5v-7l6.2 3.5-6.2 3.5Z"/></svg>
+        </a>
+        <a href="mailto:info@savechildsd.com" aria-label="البريد الإلكتروني" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-pink hover:text-pink transition">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+        </a>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs font-mono">
+        <span>© 2026 قناة عيون سنار — جميع الحقوق محفوظة</span>
+        <span>قناة محلية أرضية — البث الفضائي قريباً</span>
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
